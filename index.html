@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="uk"> <!--задаємо українську мову для сторінки lang="uk"-->
+<head>
+    <meta charset="UTF-8"> <!-- Щоб український текст і всі символи відображались правильно -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Щоб сайт добре виглядав на телефонах і планшетах -->
+    <title>Template 3</title> <!--заголовок, який буде відображатися у вкладці браузера-->
+
+    <!--підключення файликів які відповідають за стиль сторінки-->
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/general_styles.css"> 
+
+    <!--Підключення шрифтів, із сайту google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!--НАВІГАЦІЙНА ПАНЕЛЬКА-->
+        <header>
+            <nav class="navbar container">
+                <div class="align-box">
+                    <!--логотип-->
+                    <div class="navbar-logo">
+                        <img src="images/strange_caffe_logo.svg" alt="logo image" class="responsive-image">
+                    </div>
+
+                    <!--пункти меню-->
+                    <div class="navbar-menu hidden">
+                        <a href="#section-1" class="navbar-menu-item menu-text navbar-menu-1">Наші кафе</a>
+                        <a href="#section-3" class="navbar-menu-item menu-text">Мета</a>
+                        <a href="#section-5" class="navbar-menu-item menu-text">Команда</a>
+                        <a href="#section-7" class="navbar-menu-item menu-text">FAQ питання</a>
+                    </div>
+                </div>
+                
+                <!--іконки відкриття та закриття меню, відображатиметься лише для малих екранів-->
+                <div class="navbar-icons">
+                    <img src="images/menu_icon.svg" alt="menu" class="menu-icon">
+                    <img src="images/close_icon.svg" alt="close" class="close-icon hide">
+                </div>
+            </nav>
+            <hr  class="container">
+        </header>
+    
+        <!--ОСНОВНИЙ КОНТЕНТ САЙТУ-->
+        <main>
+
+            <!--СЕКЦІЯ 1-->
+            <div id="section-1"  class="section-1 container grid">
+                <!--слоган, підслоган та кнопка -->
+                <div class="span-6 responsive-align">
+                    <p class="usual-text-bold gap-40px">ресторанний бізнес</p>
+                    <h1 class="slogan">«Кафе, якого ти ще не бачив. І завтра не впізнаєш»</h1>
+                    <p class="sub-slogan">«Жодного разу однаково. Кожного разу — незабутньо»</p>
+                    <button id="btn-1" class="custom-button">зв’язок з нами</button>
+                </div>
+                <div class="span-6 image-main">
+                    <img src="images/baner-photo.png" alt="image" class="responsive-image">
+                </div>
+            </div>
+
+            <!--СЕКЦІЯ 2 - ПРО НАС-->
+            <div id="section-2" class="container">
+
+                <!--Заголовок-->
+                <div class="grid">
+                    <h2 class="tittle span-12">Наші кафе</h2>
+                </div>
+
+                <!--картки-->
+                <div class="grid section-2-cards-container">
+
+                    <!--Картка 1-->
+                    <div class="span-6 card-section-2 gaps-for-card">
+                        <div class="span-1">
+                            <p class="label-text gap-20px">Мілітарі кафе</p>
+                            <p class="usual-text">Кафе "Арсенал" — це музей зброї з кавою: гвинтівки на стінах, фляги замість чашок, військова естетика в кожній деталі.</p>
+                        </div>
+                        <div class="span-1 image-about-us">
+                            <img src="images/rfrrrr.png" alt="image" class="responsive-image">
+                        </div>
+                        
+                    </div>
+
+                    <!--Картка 2-->
+                    <div class="span-6 card-section-2 gaps-for-card">
+                        <div class="span-1">
+                            <p class="label-text gap-20px">Підліткове кафе</p>
+                            <p class="usual-text">Кафе, де обслуговують діти — це незвичайний заклад, де роль офіціантів виконують школярі. Вони приносять замовлення, а відвідувачі отримують щирий сервіс і добру атмосферу.</p>
+                        </div>
+                        <div class="span-1 image-about-us">
+                            <img src="images/joke.png" alt="image" class="responsive-image">
+                        </div>
+                    </div>
+
+                    <!--Картка 3-->
+                    <div class="span-6 card-section-2 gaps-for-card">
+                        <div class="span-1">
+                            <p class="label-text gap-20px">Зоо кафе</p>
+                            <p class="usual-text">Зоокафе — дике і атмосферне місце, де замість котиків бігають тигри, змії повзають по гілках, а поруч із твоїм столом може пройти ягуар. Не для слабких — але точно незабутньо.</p>
+                        </div>
+                        <div class="span-1 image-about-us">
+                            <img src="images/zoo.png" alt="image" class="responsive-image">
+                        </div>
+                    </div>
+
+                    <!--Картка 4-->
+                    <div class="span-6 card-section-2 gaps-for-card">
+                        <div class="span-1">
+                            <p class="label-text gap-20px">Підпільне кафе</p>
+                            <p class="usual-text">Кафе з рингом — це місце, де в центрі залу справжній боксерський ринг. Поки ти п’єш каву чи їси бургер, перед тобою проходять спаринги, шоу або тренування. </p>
+                        </div>
+                        <div class="span-1 image-about-us">
+                            <img src="images/ring.png" alt="image" class="responsive-image">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+           
+            <!--СЕКЦІЯ 3 - Цінності (Мета та місія)-->
+            <div class="section-3-wrapper">
+                <div id="section-3" class="section-gap container">
+                
+                    <!--Заголовок-->
+                    <div class="grid">
+                        <h2 class="tittle span-6-start-4">Наша мета та місія</h2>
+                    </div>
+                    
+                    <!--основний текст-->
+                    <div class="grid">
+                        <p class="usual-text span-6-start-4">Наша мета — створювати простір, де кожен гість почувається бажаним, отримує яскраві гастрономічні враження та хоче повертатися знову і знову. Ми прагнемо не просто годувати, а дарувати емоції, атмосферу та якість, які формують лояльність на роки.</p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!--СЕКЦІЯ 4 - Факти-->
+            <div id="section-4" class="section-gap section-4-container">
+                <div class="container">
+
+                    <!--Заголовок-->
+                    <div class="grid">
+                        <h2 class="tittle span-6-start-4">Досягнення, факти, цифри</h2>
+                    </div>
+
+                    <!--картки-->
+                    <div class="grid responsive-grid-large">
+                        <!--карткка 1-->
+                        <div class="span-3">
+                            <p class="card-tittle-section-4 accent-text">10+</p>
+                            <p class="card-content-section-4 usual-text">ресторанів по Україні</p>
+                        </div>
+                        <!--картка 2-->
+                        <div class="span-3">
+                            <p class="card-tittle-section-4 accent-text">7 днів</p>
+                            <p class="card-content-section-4 usual-text">працюємо без вихідних і цілодобово</p>
+                        </div>
+                        <!--картка 3-->
+                        <div class="span-3">
+                            <p class="card-tittle-section-4 accent-text">3M</p>
+                            <p class="card-content-section-4 usual-text">відвідувачів що річнно</p>
+                        </div>
+                        <!--картка 4-->
+                        <div class="span-3">
+                            <p class="card-tittle-section-4 accent-text">100%</p>
+                            <p class="card-content-section-4 usual-text">отриманих гарних ємоцій</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <!--СЕКЦІЯ 5 - Команда-->
+            <div id="section-5" class="section-gap container">
+
+                <!--Заголовок-->
+                <div class="grid">
+                    <h2 class="tittle span-12">Наша команда</h2>
+                </div>
+
+                <!--картки учасників команди-->
+                <div class="grid responsive-grid">
+
+                    
+                    <div class="span-8-start-3 grid">
+                        <!--Картка 1-->
+                        <div class="card-section-5 span-3">
+                            <img src="images/rip.png" alt="image" class="fit-image">
+                            <div class="member-box gap-24px">
+                                <p class="label-text name-box">Олександр</p>
+                                <p class="usual-text position-box">Product manager</p>
+                            </div>
+                        </div>
+
+                        <!--Картка 2-->
+                        <div class="card-section-5 span-3">
+                            <img src="images/golok.png" alt="image" class="fit-image">
+                            <div class="member-box gap-24px">
+                                <p class="label-text name-box">Ілля Марканич</p>
+                                <p class="usual-text position-box">Product manager</p>
+                            </div>
+                        </div>
+
+                        <!--Картка 3-->
+                        <div class="card-section-5 span-3">
+                            <img src="images/lok.png" alt="image" class="fit-image">
+                            <div class="member-box gap-24px">
+                                <p class="label-text name-box">Андрій Сімакін</p>
+                                <p class="usual-text position-box">Product manager</p>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                </div>
+            </div>
+
+            <!--СЕКЦІЯ 6 - Зв'зок (залишити за'явку ітд.)-->
+            <div id="section-6" class="section-6 section-gap">
+                <!--заголовок, текст-->
+                <div class="grid container">
+                    <h2 class="tittle span-8-start-3">Допоможіть нашому проекту стати краще!</h2>
+                    <p class="usual-text span-8-start-3">Допоможіть нам стати кращими — пройдіть коротке опитування. Це займе лише 2–3 хвилини, а ваші відповіді допоможуть нам покращити якість послуг/контенту/сервісу</p>
+                </div>
+                <!--кнопка-->
+                <div class="btn-align container">
+                    <button id="btn-2" class="custom-button">fidback</button>
+                </div>   
+            </div>
+            
+            <!--СЕКЦІЯ 7 - FAQ-->
+            <div id="section-7" class="section-gap container">
+
+                <!--Заголовок-->
+                <div class="grid">
+                    <h2 class="tittle span-6-start-4">FAQ Відповіді на поширені питання</h2>
+                </div>
+
+                <!--Блоки питання-відповіді-->
+               <div class="faq-section grid">
+
+                    <!--блок 1-->
+                    <details class="span-10-start-2">
+                        <summary>
+                            <p class="faq-padding label-text">Для кого наш стартап?</p>
+                            <!-- якщо іконки стрілок будуть змінюватись то їх шляхи також потрібно буде змінити у файлі main.js-->
+                            <div class="arrow-padding image-align">
+                                <img class="arrow-icon responsive-image" src="images/arrow.svg" alt="стрілка">
+                            </div>
+                        </summary>
+                        <p class="opened-content usual-text">Наш стартап — для людей, яким потрібне сучасне, зручне та нестандартне місце щою відпочити та отримати нові емоції</p>
+                    </details>
+
+                    <!--блок 2-->
+                    <details class="span-10-start-2">
+                        <summary>
+                            <p class="faq-padding label-text">Це безпечно?</p>
+                            <!-- якщо іконки стрілок будуть змінюватись то їх шляхи також потрібно буде змінити у файлі main.js-->
+                            <div class="arrow-padding image-align">
+                                <img class="arrow-icon responsive-image" src="images/arrow.svg" alt="стрілка">
+                            </div>
+                        </summary>
+                        <p class="opened-content usual-text">Так, усе під контролем: тварини в ізольованих зонах, зброя — муляжі або під склом, діти працюють під наглядом дорослих.</p>
+                    </details>
+
+                    <!--блок 3-->
+                    <details class="span-10-start-2">
+                        <summary>
+                            <p class="faq-padding label-text">Це просто шоу чи нормальний заклад?</p>
+                            <!-- якщо іконки стрілок будуть змінюватись то їх шляхи також потрібно буде змінити у файлі main.js-->
+                            <div class="arrow-padding image-align">
+                                <img class="arrow-icon responsive-image" src="images/arrow.svg" alt="стрілка">
+                            </div>
+                        </summary>
+                        <p class="opened-content usual-text">Це повноцінне кафе з їжею та напоями, просто в нестандартному оформленні й з унікальною атмосферою.</p>
+                    </details>
+
+                </div>
+            </div>
+
+        </main>
+        
+        <!--ФУТЕР ІЗ КОНТАКТНОЮ ІНФОЮ-->
+        <footer class="section-gap">
+            <div class="container">
+                <p class="usual-text gap-20px"><span class="usual-text-bold">tel:</span>+380 (096) XXX XX XX</p>
+                <p class="usual-text gap-20px"><span class="usual-text-bold">e-mail:</span>strange-caffe.company@gmail.com</p>
+                <p class="usual-text gap-20px"><span class="usual-text-bold">location:</span>Kyiv, Ukraine</p>
+            </div>
+            <div class="small-text container center-footer">
+                Strange caffe. All rights reserved ©
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+<!--додаємо скрипт-->
+<script src="main.js"></script>
+
+</html>
