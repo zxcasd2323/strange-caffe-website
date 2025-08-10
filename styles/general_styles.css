@@ -110,6 +110,9 @@ body, html{
     grid-column: 2 / span 10;
 }
 
+.span-3-team{
+    grid-column: span 3;
+}
 
 /*адаптив для різних екранів*/
 @media (max-width: 1440px) { 
@@ -123,6 +126,14 @@ body, html{
 @media(max-width: 1220px){
     :root {
         --h1: 44px;
+    }
+}
+
+@media(min-width: 1180px){
+    .centre-team {
+         display: flex;
+         justify-content: center;
+    
     }
 }
 
@@ -146,17 +157,11 @@ body, html{
     }
 
     .span-8-start-3{
-        grid-column: 2 / span 10;
+        grid-column: 1 / span 12;
     }
 
-    .card-section-5{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 24px; 
-    }
-    
-    .gap-24px{
-        margin-top: 0px;
+    .span-3-team{
+        grid-column: span 4;
     }
 
     .tittle{
@@ -198,11 +203,16 @@ body, html{
 }
 
 @media (max-width: 1020px) { 
+    .navbar-logo, .navbar-icons{
+        z-index: 1000;
+
+    }
+    
     .navbar-menu{
         z-index: 1;
-        background-color: var(--color-light);
+        background-color: var(--color-red);
         position: absolute;
-        top: 7vh;
+        top: 3vh;
         width: 100%;
         right: 0;
         height: 100vh;
@@ -251,12 +261,6 @@ body, html{
 @media (max-width: 960px){
     .span-3 {
         grid-column: span 6; 
-    }
-    
-    .card-section-5{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-row-gap: 24px; 
     }
 
 }
@@ -318,6 +322,17 @@ body, html{
     }
 }
 
+@media (max-width: 660px) {
+    .name-box{
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+
+
 @media (max-width: 600px) {
     :root {
         --h1: 30px;
@@ -335,10 +350,6 @@ body, html{
 
     .span-6-start-4{
         grid-column: 1 / span 12;
-    }
-
-    .span-8-start-3{
-        grid-column: 2 / span 10;
     }
 
     .section-gap{
@@ -441,10 +452,6 @@ body, html{
         padding: 0px 6px;
     }
 
-    .span-8-start-3{
-        grid-column: 1 / span 12;
-    }
-
     .span-6-start-4{
         grid-column: 1 / span 12;
     }
@@ -456,6 +463,14 @@ body, html{
         --body: 12px;
         --accent: 16px;
         --small: 10px;
+    }
+
+    .span-3-team{
+        grid-column: span 6;
+    }
+
+    .responsive-grid{
+        row-gap: 24px;
     }
 
 }
